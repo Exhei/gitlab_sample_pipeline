@@ -31,7 +31,7 @@ jobs:
         run: python src/tests/test_runner.py
 
       - name: Save report
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v3
         with:
           name: junit-report
           path: test-reports
@@ -43,7 +43,7 @@ jobs:
         run: pyinstaller --onefile src/solver_substract.py
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: executables
           path: dist
