@@ -37,7 +37,7 @@ jobs:
         run: pyinstaller --onefile src/solver_add.py
 
       - name: Build artifact for solver_subtract
-        run: pyinstaller --onefile src/solver_subtract.py
+        run: pyinstaller --onefile src/solver_substract.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
